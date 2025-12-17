@@ -1,11 +1,3 @@
-Rất tốt 👍
-Dưới đây là **README.md viết theo chuẩn OSS chuyên nghiệp**, tone **engineering / production / maintainable**, giống phong cách repo của **HashiCorp / Docker / Kubernetes tool**.
-
-Bạn có thể **copy 100% dùng ngay** để public GitHub.
-
----
-
-```md
 # Go Port Manager
 
 A **production-ready Chrome Extension + Go Native Messaging Host**  
@@ -13,8 +5,6 @@ for inspecting local network ports and managing running processes securely.
 
 > Built for developers who need **visibility and control over local ports**
 > without running insecure local servers.
-
----
 
 ## Table of Contents
 
@@ -27,6 +17,7 @@ for inspecting local network ports and managing running processes securely.
 - [Installation](#installation)
   - [Build Native Host](#build-native-host)
   - [Install Native Host](#install-native-host)
+  - [Native Messaging Host Manifest](#native-messaging-host-manifest)
   - [Register Native Messaging Host (Windows)](#register-native-messaging-host-windows)
   - [Load Chrome Extension](#load-chrome-extension)
 - [Usage](#usage)
@@ -34,6 +25,7 @@ for inspecting local network ports and managing running processes securely.
 - [Production Considerations](#production-considerations)
 - [FAQ](#faq)
 - [License](#license)
+- [Maintainers](#maintainers)
 
 ---
 
@@ -47,9 +39,9 @@ for inspecting local network ports and managing running processes securely.
 
 Unlike traditional solutions, this project:
 
-- ❌ Does **not** expose a local HTTP server
-- ❌ Does **not** require users to manually start background services
-- ✅ Uses **Chrome Native Messaging**, the only secure and approved way
+- ❌ Does **not** expose a local HTTP server  
+- ❌ Does **not** require users to manually start background services  
+- ✅ Uses **Chrome Native Messaging**, the only secure and approved way  
   for browser extensions to interact with the operating system
 
 ---
@@ -183,7 +175,7 @@ Copy:
 
 ### Native Messaging Host Manifest
 
-Create:
+Create the file:
 
 ```
 C:\Program Files\PortManager\com.port.manager.json
@@ -320,5 +312,3 @@ This project is intended to serve as a **reference implementation**
 for secure local tooling via Chrome Native Messaging.
 
 Contributions and improvements are welcome.
-
-```
