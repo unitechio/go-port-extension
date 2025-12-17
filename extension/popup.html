@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Port Manager</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <div class="app">
+            <!-- Header -->
+            <header class="header">
+                <div class="title">⚡ <span>Port Manager</span></div>
+                <div class="actions">
+                    <button id="refresh" title="Refresh">⟳</button>
+                </div>
+            </header>
+
+            <!-- Search -->
+            <div class="search">
+                <input id="search" placeholder="Search port, pid, process..." />
+            </div>
+
+            <!-- List -->
+            <div id="list" class="list"></div>
+
+            <!-- Empty -->
+            <div id="empty" class="empty hidden">No running ports</div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Go Port Manager",
+  "version": "1.0",
+  "permissions": ["nativeMessaging"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

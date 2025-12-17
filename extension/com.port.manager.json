@@ -1,0 +1,7 @@
+{
+  "name": "com.port.manager",
+  "description": "Go Port Manager Native Host",
+  "path": "C:\\Program Files\\PortManager\\port-manager.exe",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://ploiaeegmoofjljbaokamnoofhilgcpp/"]
+}

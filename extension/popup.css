@@ -1,0 +1,157 @@
+:root {
+    --bg: #0b1020;
+    --panel: #11162a;
+    --card: #151b34;
+    --border: #1f2547;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --primary: #38bdf8;
+    --danger: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 420px;
+    background: var(--bg);
+    font-family: Inter, system-ui, sans-serif;
+    color: var(--text);
+}
+
+.app {
+    padding: 12px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.title span {
+    color: var(--text);
+    margin-left: 6px;
+}
+
+.actions button {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 8px;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    color: var(--text);
+    border-color: var(--primary);
+}
+
+/* Search */
+.search input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    outline: none;
+    margin-bottom: 12px;
+}
+
+.search input::placeholder {
+    color: var(--muted);
+}
+
+/* List */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+/* Card */
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card:hover {
+    border-color: #334155;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.row1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.port {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.status {
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 999px;
+    background: #020617;
+    color: #22c55e;
+}
+
+.row2 {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* Kill */
+.kill {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.kill:hover {
+    color: white;
+    background: var(--danger);
+    border-color: var(--danger);
+}
+
+/* Empty */
+.empty {
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 40px;
+}
+
+.hidden {
+    display: none;
+}
